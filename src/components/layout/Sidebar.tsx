@@ -52,9 +52,11 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
       {/* Logo */}
       <div className="h-14 flex items-center px-4 border-b border-sidebar-border">
         <Link href="/" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-cyan-500/20">
-            <span className="text-white font-bold text-sm">P</span>
-          </div>
+          <img
+            src="/main.png"
+            alt="PokéTerminal"
+            className="w-8 h-8 object-contain flex-shrink-0"
+          />
           {!collapsed && (
             <span className="font-semibold text-foreground">
               PokéTerminal
